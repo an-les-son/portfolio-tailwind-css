@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <title>Anjar Oki Wibowo</title>
+</head>
+<body>
+    <div class="main list-none">
+        <!-- Navbar -->
+        <div class="py-9 ps-9 flex gap-9  text-sm">
+            <li><a href="./home.html" class="hover:font-bold hover:border-l-8 hover:pl-0.5">Home</a></li>
+            <li><a href="./about.html" class="hover:font-bold hover:border-l-8 hover:pl-0.5">About</a></li>
+            <li><a href="./works.html" class="hover:font-bold hover:border-l-8 hover:pl-0.5">Works</a></li>
+        </div>
+    <!-- Main -->
+     <div class="">
+        <h1 class="py-9 text-center text-3xl font-bold">Hiring</h1>
+        <div class="flex mt-2.5 m-auto" style="width: 400px;">
+            <form action="">
+                <label for="cname">Client Name</label><br>
+                <input type="text" id="cname" name="cname" class=" w-60 bg-gray-300" style="padding: 5px; margin-bottom: 10px; border-radius: 10px;" placeholder="Name"><br>
+
+                <label for="cname" class="mt-3.5">Email</label><br>
+                <input type="text" id="email" name="email" class="w-60 bg-gray-300" style="padding: 5px; margin-bottom: 10px; border-radius: 10px;"><br>
+
+                <label for="cname">Phone</label><br>
+                <input type="text" id="phone" name="phone" class="w-60 bg-gray-300" style="padding: 5px; margin-bottom: 10px; border-radius: 10px;"><br>
+
+                <label for="require">Require</label><br>
+                <select name="selected_require" id="require" class="w-60 bg-gray-300" style="padding: 5px; margin-bottom: 10px; border-radius: 10px;">
+                    <option value="">Please Choose an option</option>
+                    <option value="uiuxdesign">UI/UX Design</option>
+                    <option value="fullstackdevweb">Fullstack Development Web</option>
+                    <option value="sketch">Sketch</option>
+                </select>
+                <br>
+
+                <label for="jobdesc">Job Descriptions</label><br>
+                <textarea name="" id="jobdesc" class="w-full h-32 bg-gray-300" style="width: 394px; height: 148px; padding: 5px; border-radius: 10px;"></textarea>
+
+                <button class="rounded-3xl bg-gray-300 m-auto hover:bg-white block" style="width:100px; padding: 5px; margin-top: 30px;">
+                    Send <img src="../assets/send.png" alt="" class="inline">
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+      <div class="mt-40 flex justify-between p-9 text-xs">
+        <div class=" flex gap-4 list-none">
+            <li><a href="" class="flex" target="_blank">Download CV 
+                <img src="../assets/download.png" class="ms-1.5">
+            </a></li>
+            <li><a href="http://wa.me/6285157752245" class="flex" target="_blank">Chat
+                <img src="../assets/chat.png" class="ms-1.5">
+            </a></li>
+        </div>
+        <div class="">
+            <p>© 2025 Anjar</p>
+        </div>
+     </div>
+    </div>
+</body>
+</html>

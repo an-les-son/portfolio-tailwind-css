@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "tailwindcss-motion": "^1.1.1"
+  },
+  "devDependencies": {
+    "tailwindcss-intersect": "^2.2.0"
   }
 }

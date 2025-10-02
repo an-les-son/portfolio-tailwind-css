@@ -12,7 +12,7 @@
 /* animation */
 
 @theme {
-  --animate-slide-up: slide-up 12s infinite;
+  --animate-slide-up: slide-up 12s linear infinite;
   @keyframes slide-up {
     0%, 10% {
       transform: translateY(0%);
@@ -34,16 +34,15 @@
       transform: translateY(-400%);
     }
 
-     0% {
-      transform: translateY(0%);
-    }
-
   }
 
-  --animate-cursor: cursor 8s step-end infinite;
-  @keyframes cursor {
-    50% {
-      border-color: transparent;
+  --animate-in: in .5s ease;
+  @keyframes in {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0%);
     }
   }
 

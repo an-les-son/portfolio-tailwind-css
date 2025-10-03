@@ -8,6 +8,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-amber-600: oklch(66.6% 0.179 58.318);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
@@ -184,6 +187,9 @@
   .relative {
     position: relative;
   }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
   .m-auto {
     margin: auto;
   }
@@ -232,9 +238,6 @@
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
   }
-  .mt-44 {
-    margin-top: calc(var(--spacing) * 44);
-  }
   .mt-60 {
     margin-top: calc(var(--spacing) * 60);
   }
@@ -268,14 +271,32 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
-  .h-\[3\.8rem\] {
-    height: 3.8rem;
+  .h-\[5\%\] {
+    height: 5%;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
+  .h-\[8\%\] {
+    height: 8%;
   }
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
+  .h-\[10\%\] {
+    height: 10%;
+  }
+  .h-\[20\%\] {
+    height: 20%;
+  }
+  .h-\[70\%\] {
+    height: 70%;
+  }
+  .h-\[80\%\] {
+    height: 80%;
+  }
+  .h-\[82\%\] {
+    height: 82%;
+  }
+  .h-\[85\%\] {
+    height: 85%;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
@@ -294,6 +315,12 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-\[100\%\] {
+    width: 100%;
+  }
+  .w-\[100vw\] {
+    width: 100vw;
   }
   .w-full {
     width: 100%;
@@ -336,14 +363,8 @@
     --motion-rotate-out-animation: motion-rotate-out calc(var(--motion-rotate-duration, var(--motion-duration)) * var(--motion-rotate-perceptual-duration-multiplier, var(--motion-perceptual-duration-multiplier))) var(--motion-rotate-timing, var(--motion-timing)) var(--motion-rotate-delay, var(--motion-delay)) both;
     animation: var(--motion-scale-out-animation), var(--motion-translate-out-animation), var(--motion-rotate-out-animation), var(--motion-filter-out-animation), var(--motion-opacity-out-animation), var(--motion-background-color-out-animation), var(--motion-text-color-out-animation);
   }
-  .animate-bounce {
-    animation: var(--animate-bounce);
-  }
   .animate-in {
     animation: var(--animate-in);
-  }
-  .animate-slide-up {
-    animation: var(--animate-slide-up);
   }
   .resize {
     resize: both;
@@ -354,20 +375,32 @@
   .flex-col {
     flex-direction: column;
   }
+  .content-between {
+    align-content: space-between;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
   .gap-9 {
     gap: calc(var(--spacing) * 9);
-  }
-  .overflow-hidden {
-    overflow: hidden;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -384,11 +417,20 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
   }
+  .bg-amber-600 {
+    background-color: var(--color-amber-600);
+  }
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
+  }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
   }
   .bg-cover {
     background-size: cover;
@@ -441,20 +483,9 @@
   .text-\[18px\] {
     font-size: 18px;
   }
-  .leading-\[4rem\] {
-    --tw-leading: 4rem;
-    line-height: 4rem;
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
-  }
-  .whitespace-nowrap {
-    white-space: nowrap;
   }
   .underline {
     text-decoration-line: underline;
@@ -1025,10 +1056,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1135,7 +1162,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
       --tw-blur: initial;

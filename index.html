@@ -3,64 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
     <title>Anjar Oki Wibowo</title>
 </head>
-<body class="font-albert">
-    <div class="main list-none">
-        <!-- Navbar -->
-        <div class="mt-6 py-9 ps-9 flex gap-9  text-sm">
+<body>
+    <div class="h-[100vh] w-[100vw] border flex flex-col justify-between">
+        <!-- navbar -->
+        <div class="flex justify-start items-start">
+            <div class="mt-6 ps-9 flex gap-9 text-sm list-none">
             <li><a href="/index.html" class="hover:font-bold hover:border-l-8 hover:pl-0.5">Home</a></li>
             <li><a href="public/about.html" class="hover:font-bold hover:border-l-8 hover:pl-0.5">About</a></li>
             <li><a href="public/works.html" class="hover:font-bold hover:border-l-8 hover:pl-0.5">Works</a></li>
+            </div>
         </div>
-    <!-- Main -->
-     <div class="relative flex justify-center mt-32">
-        <div class="absolute p-8">
-            <p class="text-[18px] text-center font-bold inline-block animation-text">
-            <span class="hidden block animate-in">Hi, there</span>
-            <span class="hidden block animate-in">I'am Anjar</span>
-            <span class="hidden block animate-in">I'am a UI/UX Designer</span>
-            <span class="hidden block animate-in">I'am a Full-Stack Web Developer</span>
-            <span class="hidden block animate-in">I'am a Sketcher</span>
-            </p>
+        <!-- main -->
+        <div class="flex justify-center items-center">
+            <div class="relative">
+                <p class="text-[18px] text-center font-bold inline-block animation-text">
+                    <span class="hidden block animate-in">Hi, there</span>
+                    <span class="hidden block animate-in">I'am Anjar</span>
+                    <span class="hidden block animate-in">I'am a UI/UX Designer</span>
+                    <span class="hidden block animate-in">I'am a Full-Stack Web Developer</span>
+                    <span class="hidden block animate-in">I'am a Sketcher</span>
+                </p>
+            </div>
         </div>
-    </div>
-    <!-- Footer -->
-     <!-- mobile -->
-     <div class="mt-[260px] p-9 text-xs text-center">
-        <div class="flex gap-4 list-none justify-center">
-            <li><a href="./assets/Anjar Oki Wibowo CV.pdf" class="flex" target="_blank">Download CV 
-                <img src="./assets/download.png" class="ms-1.5">
-            </a></li>
-            <li><a href="http://wa.me/6285157752245" class="flex" target="_blank">Chat
-                <img src="./assets/chat.png" class="ms-1.5">
-            </a></li>
-            <li><a href="public/hiring.html" class="flex">Hiring
-                <img src="./assets/hiring.png" class="ms-1.5">
-            </a></li>
-        </div>
-        <div class="border-t mt-8 py-5">
-            <p>© 2025 Anjar</p>
-        </div>
+
+        <!-- footer -->
+        <div class="flex justify-center items-end">
+            <div class="text-xs text-center">
+                <div class="flex gap-4 list-none justify-center">
+                    <li><a href="./assets/Anjar Oki Wibowo CV.pdf" class="flex" target="_blank">Download CV 
+                        <img src="./assets/download.png" class="ms-1.5">
+                    </a></li>
+                    <li><a href="http://wa.me/6285157752245" class="flex" target="_blank">Chat
+                        <img src="./assets/chat.png" class="ms-1.5">
+                    </a></li>
+                    <li><a href="public/hiring.html" class="flex">Hiring
+                        <img src="./assets/hiring.png" class="ms-1.5">
+                    </a></li>
+                </div>
+                <div class="border-t mt-8 py-5">
+                    <p>© 2025 Anjar</p>
+                </div>
+            </div>
      </div>
-     <!-- dekstop -->
-      <!-- <div class="mt-40 flex justify-between p-9 text-xs">
-        <div class=" flex gap-4 list-none">
-            <li><a href="" class="flex" target="_blank">Download CV 
-                <img src="../assets/download.png" class="ms-1.5">
-            </a></li>
-            <li><a href="http://wa.me/6285157752245" class="flex" target="_blank">Chat
-                <img src="../assets/chat.png" class="ms-1.5">
-            </a></li>
-            <li><a href="./hiring.html" class="flex">Hiring
-                <img src="../assets/hiring.png" class="ms-1.5">
-            </a></li>
-        </div>
-        <div class="">
-            <p>© 2025 Anjar</p>
-        </div>
-     </div> -->
     </div>
     <script src="./animation.js"></script>
 </body>

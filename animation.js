@@ -14,7 +14,7 @@ function animationText() {
         index++;
     }
 
-    setTimeout(animationText, 3000);
+    setTimeout(animationText, 2000);
 }
 
 window.onload=animationText();

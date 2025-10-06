@@ -8,9 +8,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-600: oklch(66.6% 0.179 58.318);
-    --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
@@ -21,14 +21,11 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --font-weight-light: 300;
     --font-weight-bold: 700;
     --radius-3xl: 1.5rem;
-    --animate-bounce: bounce 1s infinite;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-albert: "Albert Sans", sans-serif;
-    --animate-slide-up: slide-up 12s linear infinite;
     --animate-in: in .5s ease;
   }
 }
@@ -181,14 +178,8 @@
   }
 }
 @layer utilities {
-  .absolute {
-    position: absolute;
-  }
   .relative {
     position: relative;
-  }
-  .m-0 {
-    margin: calc(var(--spacing) * 0);
   }
   .m-auto {
     margin: auto;
@@ -229,11 +220,8 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mt-24 {
-    margin-top: calc(var(--spacing) * 24);
-  }
-  .mt-32 {
-    margin-top: calc(var(--spacing) * 32);
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
   }
   .mt-40 {
     margin-top: calc(var(--spacing) * 40);
@@ -241,8 +229,8 @@
   .mt-60 {
     margin-top: calc(var(--spacing) * 60);
   }
-  .mt-\[260px\] {
-    margin-top: 260px;
+  .box-border {
+    box-sizing: border-box;
   }
   .block {
     display: block;
@@ -271,30 +259,6 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
-  .h-\[5\%\] {
-    height: 5%;
-  }
-  .h-\[8\%\] {
-    height: 8%;
-  }
-  .h-\[10\%\] {
-    height: 10%;
-  }
-  .h-\[20\%\] {
-    height: 20%;
-  }
-  .h-\[70\%\] {
-    height: 70%;
-  }
-  .h-\[80\%\] {
-    height: 80%;
-  }
-  .h-\[82\%\] {
-    height: 82%;
-  }
-  .h-\[85\%\] {
-    height: 85%;
-  }
   .h-\[100vh\] {
     height: 100vh;
   }
@@ -315,9 +279,6 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
-  }
-  .w-\[100\%\] {
-    width: 100%;
   }
   .w-\[100vw\] {
     width: 100vw;
@@ -375,8 +336,8 @@
   .flex-col {
     flex-direction: column;
   }
-  .content-between {
-    align-content: space-between;
+  .content-center {
+    align-content: center;
   }
   .items-center {
     align-items: center;
@@ -417,20 +378,20 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
   }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
   .bg-amber-600 {
     background-color: var(--color-amber-600);
   }
-  .bg-blue-600 {
-    background-color: var(--color-blue-600);
+  .bg-blue-400 {
+    background-color: var(--color-blue-400);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
   .bg-gray-300 {
     background-color: var(--color-gray-300);
-  }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
   }
   .bg-cover {
     background-size: cover;
@@ -441,9 +402,6 @@
   .p-2\.5 {
     padding: calc(var(--spacing) * 2.5);
   }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
-  }
   .p-9 {
     padding: calc(var(--spacing) * 9);
   }
@@ -453,11 +411,17 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
   .py-9 {
     padding-block: calc(var(--spacing) * 9);
   }
   .ps-9 {
     padding-inline-start: calc(var(--spacing) * 9);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .text-center {
     text-align: center;
@@ -1117,33 +1081,6 @@
 @property --tw-drop-shadow-size {
   syntax: "*";
   inherits: false;
-}
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-@keyframes slide-up {
-  0%, 10% {
-    transform: translateY(0%);
-  }
-  15%, 25% {
-    transform: translateY(-110%);
-  }
-  30%, 40% {
-    transform: translateY(-210%);
-  }
-  45%, 55% {
-    transform: translateY(-310%);
-  }
-  60%, 70% {
-    transform: translateY(-400%);
-  }
 }
 @keyframes in {
   0% {

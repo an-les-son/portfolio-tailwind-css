@@ -1,3 +1,4 @@
+// animasi homepage
 const text = document.querySelector(".animation-text").children;
 textLen = text.length;
 let index = 0;

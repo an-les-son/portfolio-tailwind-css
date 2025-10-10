@@ -24,34 +24,34 @@
         <div class="w-9/12 my-10 m-auto">
             <div class="flex flex-col gap-4 md:grid md:grid-cols-4">
                 <div class="uiux01 cursor-pointer">
-                    <div class="bg-gray-300 h-96 rounded-3xl">01</div>
+                    <div class="bg-gray-300 h-96 rounded-3xl"></div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
+                <div class="uiux02 cursor-pointer">
                     <div class="bg-gray-100 h-48 rounded-3xl">02</div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
+                <div class="uiux03 cursor-pointer">
                     <div class="bg-gray-300 h-96 rounded-3xl">03</div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
+                <div class="uiux04 cursor-pointer">
                     <div class="bg-gray-100 h-48 rounded-3xl">04</div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
+                <div class="uiux05 cursor-pointer">
                     <div class="bg-gray-300 h-48 rounded-3xl">05</div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
+                <div class="uiux06 cursor-pointer">
                     <div class="bg-gray-100 h-96 rounded-3xl md:-mt-48">06</div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
+                <div class="uiux07 cursor-pointer">
                     <div class="bg-gray-300 h-48 rounded-3xl">07</div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-                <div>
+                <div class="uiux08 cursor-pointer">
                     <div class="bg-gray-100 h-96 rounded-3xl md:-mt-48">08</div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
@@ -62,7 +62,7 @@
         <div class="w-9/12 my-10 m-auto">
             <div class="flex flex-col gap-4 md:grid md:grid-cols-4">
                 <div>
-                    <div class="bg-gray-300 h-96 rounded-3xl">01</div>
+                    <div class="bg-gray-300 h-96 rounded-3xl"></div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div>
@@ -116,7 +116,7 @@
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="flex flex-col gap-4 md:grid md:grid-cols-4">
+            <div class="mt-4 flex flex-col gap-4 md:grid md:grid-cols-4">
                 <div>
                     <div class="bg-gray-300 h-96 rounded-3xl">09</div>
                     <p class="text-xs w-3/4 m-auto mt-1.5"><span class="font-bold">Lorem, 2020</span><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -156,26 +156,43 @@
      <div class="absolute info-desc hidden">
         <div class="w-[100vw] h-[100%] bg-white opacity-0 flex p-9 box-border fixed">  
         </div>
-        <div class="absolute w-[100vw] h-[100vh] flex justify-center items-center">
-            <div class="p-9 w-[80vw] h-[80vh] bg-white rounded-3xl flex flex-col md:flex-row fixed">
+        <div class="relative w-[100vw] h-[100vh] flex justify-center items-center">
+            <div class="p-9 w-[80%] h-[80%] bg-white rounded-3xl flex flex-col md:flex-row fixed">
                 <div class="m-auto max-md:hidden">
                     <div class="w-64 h-64 md:h-96 bg-gray-300 rounded-3xl m-auto">
                         <!-- <img src="../assets/profile.jpg" alt="" class="bg-cover"> -->
                     </div>
-                    <p class="w-60 m-auto mt-1 text-xs"><span class="font-bold">2023 </span>Having a haircut at the peak of Mount Rinjani, a symbol of having successfully reached the peak</p>
+                    <div class="flex justify-center w-60 mt-1 text-xs gap-1">
+                        <p class="font-bold">2020</p>
+                        <p class="">Lorem, ipsum dolor sit amet.</p>
+                    </div>
                 </div>
-                <div class="mt-7 md:px-9 overflow-auto desc">
-                    <p class="text-justify">Hi there !<br>I'am Anjar Oki Wibowo, just call me Anjar. I live in Jakarta, Indonesia, and I started my professional journey as a Network Engineer. Since 2020, I have been transitioning into the world of web development, covering areas such as UI/UX design, frontend development, and backend development. This career switch was driven by my passion for the digital creative field, where I can combine technical expertise with artistic expression.</p>
+                <div class="mt-7 md:px-9 cursor-all-scroll overflow-y-auto desc h-[60vh] desc">
+                    <h1 class="title-project font-bold">UI/UX Project 01</h1>
+                    <p class="font-bold">Project Overview</p>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint ex id, dignissimos, fuga saepe impedit a harum accusantium quibusdam atque in? Recusandae quis nulla quibusdam harum in minus optio mollitia, iusto impedit corrupti expedita atque perspiciatis ratione quod quam iste sed vitae reprehenderit autem quidem aliquam maiores nemo quas ipsum.</p>
                     <br>
-                    <p class="text-justify">As a web developer, I strive to create digital solutions that are not only functional but also visually engaging. I believe a website should deliver a delightful experience for users, both in terms of aesthetics and usability. My background in network engineering has shaped me to think systematically, while my journey in web development has taught me to innovate continuously and adapt to user needs</p>
+                    <p class="font-bold">Visual Direction</p>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur, modi rerum odio officiis praesentium nobis ullam obcaecati, perspiciatis molestias autem sequi incidunt, dolore reprehenderit?</p>
                     <br>
-                    <p class="text-justify">Beyond my professional path, I also a sketcher. This hobby allows me to see web design from a different perspective — treating each interface as a work of art that requires harmony, composition, and expression. The fusion of artistic taste from painting and technical skills in web development inspires me to craft websites that are attractive, unique, and full of character. On the side, I present a personal illustration that represents who I am.
-                    </p>
+                    <p class="font-bold">Tipografi</p>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minima dolore vitae atque laudantium aspernatur odit accusamus, quibusdam totam accusantium?</p>
+                    <br>
+                    <p class="font-bold">User Experience</p>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maxime quia totam a harum explicabo veritatis possimus eos asperiores aspernatur ad odit sed dolorem nemo esse amet dolore, praesentium blanditiis officiis nihil incidunt fugit! Impedit vitae atque rerum nesciunt amet!</p>
+                    <br>
+                    <p class="font-bold">Design Objective</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, ratione!</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                    </ol>
                     
                 </div>
             </div>
-            <div class="absolute p-2 w-[80vw] h-[80vh] flex justify-end fixed">
-                <div class="w-1 h-1 bg-black p-5 flex justify-center items-center rounded-3xl cursor-pointer btn-cls">
+            <div class="absolute p-2 w-[80vw] h-[80vh] flex justify-end">
+                <div class="w-1 h-1 bg-black p-5 flex justify-center items-center rounded-3xl cursor-pointer btn-cls fixed">
                 <span class="text-white rotate-45 text-3xl">+</span>
             </div>
             </div>

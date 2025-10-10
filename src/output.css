@@ -10,7 +10,6 @@
       "Courier New", monospace;
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-300: oklch(87.2% 0.01 258.338);
-    --color-zinc-900: oklch(21% 0.006 285.885);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -18,8 +17,6 @@
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
@@ -30,6 +27,7 @@
     --default-mono-font-family: var(--font-mono);
     --font-albert: "Albert Sans", sans-serif;
     --animate-in: in .5s ease;
+    --animate-typing: typing 3s infinite alternate;
   }
 }
 @layer base {
@@ -220,6 +218,9 @@
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -271,6 +272,12 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-\[60vh\] {
+    height: 60vh;
+  }
+  .h-\[80\%\] {
+    height: 80%;
+  }
   .h-\[80vh\] {
     height: 80vh;
   }
@@ -300,6 +307,9 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
+  }
+  .w-\[80\%\] {
+    width: 80%;
   }
   .w-\[80vw\] {
     width: 80vw;
@@ -354,6 +364,9 @@
   .animate-in {
     animation: var(--animate-in);
   }
+  .cursor-all-scroll {
+    cursor: all-scroll;
+  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -387,14 +400,17 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
   .gap-9 {
     gap: calc(var(--spacing) * 9);
   }
-  .overflow-auto {
-    overflow: auto;
+  .overflow-y-auto {
+    overflow-y: auto;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -455,6 +471,9 @@
   }
   .text-justify {
     text-align: justify;
+  }
+  .text-right {
+    text-align: right;
   }
   .font-albert {
     font-family: var(--font-albert);
@@ -534,16 +553,6 @@
   }
   .max-md\:hidden {
     @media (width < 48rem) {
-      display: none;
-    }
-  }
-  .max-sm\:hidden {
-    @media (width < 40rem) {
-      display: none;
-    }
-  }
-  .min-sm\:hidden {
-    @media (width >= 40rem) {
       display: none;
     }
   }
@@ -1213,6 +1222,14 @@
   }
   100% {
     transform: translateY(0%);
+  }
+}
+@keyframes typing {
+  0%, 10% {
+    width: 0%;
+  }
+  70%, 100% {
+    width: 100%;
   }
 }
 @layer properties {

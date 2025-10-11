@@ -187,14 +187,101 @@
   .relative {
     position: relative;
   }
+  .top-\[10\%\] {
+    top: 10%;
+  }
+  .top-\[12\%\] {
+    top: 12%;
+  }
+  .top-\[13\%\] {
+    top: 13%;
+  }
+  .right-1 {
+    right: calc(var(--spacing) * 1);
+  }
+  .right-1\/2 {
+    right: calc(1/2 * 100%);
+  }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
+  }
+  .right-3\.5 {
+    right: calc(var(--spacing) * 3.5);
+  }
+  .right-3\/4 {
+    right: calc(3/4 * 100%);
+  }
+  .right-28 {
+    right: calc(var(--spacing) * 28);
+  }
+  .right-\[25\%\] {
+    right: 25%;
+  }
+  .right-\[100\%\] {
+    right: 100%;
+  }
+  .right-full {
+    right: 100%;
+  }
+  .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
+  }
+  .left-24 {
+    left: calc(var(--spacing) * 24);
+  }
+  .left-\[80\%\] {
+    left: 80%;
+  }
+  .left-\[82\%\] {
+    left: 82%;
+  }
+  .left-\[87\%\] {
+    left: 87%;
+  }
+  .left-\[88\%\] {
+    left: 88%;
+  }
+  .left-\[89\%\] {
+    left: 89%;
+  }
+  .left-full {
+    left: 100%;
+  }
   .m-auto {
     margin: auto;
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
+  .ms-1 {
+    margin-inline-start: calc(var(--spacing) * 1);
+  }
   .ms-1\.5 {
     margin-inline-start: calc(var(--spacing) * 1.5);
+  }
+  .-mt-1 {
+    margin-top: calc(var(--spacing) * -1);
+  }
+  .-mt-1\.5 {
+    margin-top: calc(var(--spacing) * -1.5);
+  }
+  .-mt-2 {
+    margin-top: calc(var(--spacing) * -2);
+  }
+  .-mt-2\.5 {
+    margin-top: calc(var(--spacing) * -2.5);
+  }
+  .-mt-6 {
+    margin-top: calc(var(--spacing) * -6);
+  }
+  .-mt-8 {
+    margin-top: calc(var(--spacing) * -8);
+  }
+  .-mt-\[2px\] {
+    margin-top: calc(2px * -1);
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
@@ -202,8 +289,14 @@
   .mt-1\.5 {
     margin-top: calc(var(--spacing) * 1.5);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-2\.5 {
     margin-top: calc(var(--spacing) * 2.5);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
   }
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
@@ -226,6 +319,9 @@
   .mt-60 {
     margin-top: calc(var(--spacing) * 60);
   }
+  .-mr-6 {
+    margin-right: calc(var(--spacing) * -6);
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -243,6 +339,9 @@
   }
   .inline-block {
     display: inline-block;
+  }
+  .table {
+    display: table;
   }
   .h-1 {
     height: calc(var(--spacing) * 1);
@@ -262,6 +361,9 @@
   .h-\[60vh\] {
     height: 60vh;
   }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
   .h-\[80\%\] {
     height: 80%;
   }
@@ -277,8 +379,14 @@
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
   .w-9\/12 {
     width: calc(9/12 * 100%);
@@ -301,8 +409,46 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .rotate-45 {
     rotate: 45deg;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .motion-scale-in {
+    --motion-origin-scale-x: 50%;
+    --motion-origin-scale-y: 50%;
+    --motion-scale-in-animation: motion-scale-in calc(var(--motion-scale-duration, var(--motion-duration)) * var(--motion-scale-perceptual-duration-multiplier, var(--motion-perceptual-duration-multiplier))) var(--motion-scale-timing, var(--motion-timing)) var(--motion-scale-delay, var(--motion-delay)) both;
+    animation: var(--motion-scale-in-animation), var(--motion-translate-in-animation), var(--motion-rotate-in-animation), var(--motion-filter-in-animation), var(--motion-opacity-in-animation), var(--motion-background-color-in-animation), var(--motion-text-color-in-animation), var(--motion-scale-loop-animation), var(--motion-translate-loop-animation), var(--motion-rotate-loop-animation), var(--motion-filter-loop-animation), var(--motion-opacity-loop-animation), var(--motion-background-color-loop-animation), var(--motion-text-color-loop-animation);
+  }
+  .motion-scale-out {
+    --motion-end-scale-x: 50%;
+    --motion-end-scale-y: 50%;
+    --motion-scale-out-animation: motion-scale-out calc(var(--motion-scale-duration, var(--motion-duration)) * var(--motion-scale-perceptual-duration-multiplier, var(--motion-perceptual-duration-multiplier))) var(--motion-scale-timing, var(--motion-timing)) var(--motion-scale-delay, var(--motion-delay)) both;
+    animation: var(--motion-scale-out-animation), var(--motion-translate-out-animation), var(--motion-rotate-out-animation), var(--motion-filter-out-animation), var(--motion-opacity-out-animation), var(--motion-background-color-out-animation), var(--motion-text-color-out-animation);
+  }
+  .motion-opacity-in {
+    --motion-origin-opacity: 0;
+    --motion-opacity-in-animation: motion-opacity-in calc(var(--motion-opacity-duration, var(--motion-duration)) * var(--motion-opacity-perceptual-duration-multiplier, var(--motion-perceptual-duration-multiplier))) var(--motion-opacity-timing, var(--motion-timing)) var(--motion-opacity-delay, var(--motion-delay)) both;
+    animation: var(--motion-scale-in-animation), var(--motion-translate-in-animation), var(--motion-rotate-in-animation), var(--motion-filter-in-animation), var(--motion-opacity-in-animation), var(--motion-background-color-in-animation), var(--motion-text-color-in-animation), var(--motion-scale-loop-animation), var(--motion-translate-loop-animation), var(--motion-rotate-loop-animation), var(--motion-filter-loop-animation), var(--motion-opacity-loop-animation), var(--motion-background-color-loop-animation), var(--motion-text-color-loop-animation);
+  }
+  .motion-opacity-out {
+    --motion-end-opacity: 0;
+    --motion-opacity-out-animation: motion-opacity-out calc(var(--motion-opacity-duration, var(--motion-duration)) * var(--motion-opacity-perceptual-duration-multiplier, var(--motion-perceptual-duration-multiplier))) var(--motion-opacity-timing, var(--motion-timing)) var(--motion-opacity-delay, var(--motion-delay)) both;
+    animation: var(--motion-scale-out-animation), var(--motion-translate-out-animation), var(--motion-rotate-out-animation), var(--motion-filter-out-animation), var(--motion-opacity-out-animation), var(--motion-background-color-out-animation), var(--motion-text-color-out-animation);
+  }
+  .motion-rotate-in {
+    --motion-origin-rotate: 12deg;
+    --motion-rotate-in-animation: motion-rotate-in calc(var(--motion-rotate-duration, var(--motion-duration)) * var(--motion-rotate-perceptual-duration-multiplier, var(--motion-perceptual-duration-multiplier))) var(--motion-rotate-timing, var(--motion-timing)) var(--motion-rotate-delay, var(--motion-delay)) both;
+    animation: var(--motion-scale-in-animation), var(--motion-translate-in-animation), var(--motion-rotate-in-animation), var(--motion-filter-in-animation), var(--motion-opacity-in-animation), var(--motion-background-color-in-animation), var(--motion-text-color-in-animation), var(--motion-scale-loop-animation), var(--motion-translate-loop-animation), var(--motion-rotate-loop-animation), var(--motion-filter-loop-animation), var(--motion-opacity-loop-animation), var(--motion-background-color-loop-animation), var(--motion-text-color-loop-animation);
+  }
+  .motion-rotate-out {
+    --motion-end-rotate: 12deg;
+    --motion-rotate-out-animation: motion-rotate-out calc(var(--motion-rotate-duration, var(--motion-duration)) * var(--motion-rotate-perceptual-duration-multiplier, var(--motion-perceptual-duration-multiplier))) var(--motion-rotate-timing, var(--motion-timing)) var(--motion-rotate-delay, var(--motion-delay)) both;
+    animation: var(--motion-scale-out-animation), var(--motion-translate-out-animation), var(--motion-rotate-out-animation), var(--motion-filter-out-animation), var(--motion-opacity-out-animation), var(--motion-background-color-out-animation), var(--motion-text-color-out-animation);
   }
   .animate-in {
     animation: var(--animate-in);
@@ -313,11 +459,29 @@
   .cursor-pointer {
     cursor: pointer;
   }
+  .resize {
+    resize: both;
+  }
   .list-none {
     list-style-type: none;
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .place-content-center {
+    place-content: center;
+  }
+  .place-content-start {
+    place-content: start;
+  }
+  .place-items-start {
+    place-items: start;
   }
   .items-center {
     align-items: center;
@@ -343,17 +507,48 @@
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
   .gap-9 {
     gap: calc(var(--spacing) * 9);
   }
+  .place-self-end {
+    place-self: end;
+  }
+  .place-self-start {
+    place-self: start;
+  }
+  .self-baseline {
+    align-self: baseline;
+  }
+  .self-center {
+    align-self: center;
+  }
+  .self-end {
+    align-self: flex-end;
+  }
+  .self-end-safe {
+    align-self: safe flex-end;
+  }
+  .self-start {
+    align-self: flex-start;
+  }
   .overflow-y-auto {
     overflow-y: auto;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -402,6 +597,18 @@
   .ps-9 {
     padding-inline-start: calc(var(--spacing) * 9);
   }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .pr-5 {
+    padding-right: calc(var(--spacing) * 5);
+  }
+  .pb-9 {
+    padding-bottom: calc(var(--spacing) * 9);
+  }
+  .pl-9 {
+    padding-left: calc(var(--spacing) * 9);
+  }
   .text-center {
     text-align: center;
   }
@@ -433,8 +640,18 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .hover\:border-2 {
     &:hover {
@@ -514,6 +731,11 @@
       height: calc(var(--spacing) * 96);
     }
   }
+  .md\:h-\[60vh\] {
+    @media (width >= 48rem) {
+      height: 60vh;
+    }
+  }
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -524,9 +746,19 @@
       flex-direction: row;
     }
   }
+  .md\:flex-wrap {
+    @media (width >= 48rem) {
+      flex-wrap: wrap;
+    }
+  }
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
+    }
+  }
+  .md\:self-start {
+    @media (width >= 48rem) {
+      align-self: flex-start;
     }
   }
   .md\:border-t-0 {
@@ -1052,12 +1284,90 @@
     }
   }
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
   syntax: "*";
   inherits: false;
 }
@@ -1072,8 +1382,27 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
     }
   }
 }

@@ -19,3 +19,18 @@ function animationText() {
 }
 
 window.onload=animationText();
+
+// hitung visitor
+
+const hitungUrl = 'https://api.countapi.xyz/hit/an-les-son.github.io/portfolio-tailwind-css/visitor';
+const tampilUrl = 'https://api.countapi.xyz/get/an-les-son.github.io/portfolio-tailwind-css/visitor';
+
+fetch(hitungUrl)
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('counter').innerText = data.value;
+      })
+      .catch(err => {
+        console.error(err);
+        document.getElementById('counter').innerText = '?';
+      });

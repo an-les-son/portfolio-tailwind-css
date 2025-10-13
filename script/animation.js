@@ -22,16 +22,20 @@ window.onload=animationText();
 
 // hitung visitor
 
-const hitungUrl = 'https://api.countapi.xyz/hit/an-les-son.github.io/portfolio-tailwind-css/visitor';
-const tampilUrl = 'https://api.countapi.xyz/get/an-les-son.github.io/portfolio-tailwind-css/visitor';
+function getVisitorData() {
+      let data = localStorage.getItem("visitorData");
+      return data ? JSON.parse(data) : { count: 0 };
+    }
 
-fetch(hitungUrl)
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('counter').innerText = data.value;
-      })
-      .catch(err => {
-        console.error(err);
-        document.getElementById('counter').innerText = '72';
-      });
+    function saveVisitorData(data) {
+      localStorage.setItem("visitorData", JSON.stringify(data));
+    }
+
+    let visitorData = getVisitorData();
+
+    visitorData.count += 1;
+
+    saveVisitorData(visitorData);
+
+    document.getElementById("counter").textContent = visitorData.count;
 

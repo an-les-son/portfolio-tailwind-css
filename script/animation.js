@@ -22,8 +22,8 @@ window.onload=animationText();
 
 // hitung visitor
 
-const hitungUrl = 'https://api.countapi.xyz/hit/youtube.com/visitor';
-const tampilUrl = 'https://api.countapi.xyz/get/youtube.com/visitor';
+const hitungUrl = 'https://api.countapi.xyz/hit/an-les-son.github.io/portfolio-tailwind-css/visitor';
+const tampilUrl = 'https://api.countapi.xyz/get/an-les-son.github.io/portfolio-tailwind-css/visitor';
 
 fetch(hitungUrl)
       .then(res => res.json())
@@ -34,3 +34,4 @@ fetch(hitungUrl)
         console.error(err);
         document.getElementById('counter').innerText = '72';
       });
+

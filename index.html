@@ -17,7 +17,7 @@
             </div>
         </div>
         <!-- main -->
-        <div class="w-[100%] h-[60%] md:h-[80%] p-9 flex justify-center items-center">
+        <div class="w-[100%] h-[60%] md:h-[100%] p-9 md:py-0 flex justify-center items-center">
             <div class="absolute">
                 <p class="text-[18px] md:text-5xl text-center font-bold inline-block animation-text">
                     <span class="hidden block animate-in">Hi, there</span>
@@ -27,13 +27,14 @@
                     <span class="hidden block animate-in">I'am a Sketcher</span>
                 </p>
             </div>
-            <div class="self-end w-[100%] flex max-md:flex-col justify-center md:justify-end gap-1 text-[10px] items-center">
-                <div class="flex font-bold w-10 h-10 justify-center items-center">
+            <div class="self-end w-[100%] flex flex-col justify-end gap-1 items-center md:items-end">
+                <div class="flex font-bold w-10 h-10 justify-center items-center text-[10px]">
                     <img src="./assets/visitor.png" class="rounded-3xl animate-spin">
                     <p id=counter class="absolute text-white"></p>
-                     <!-- <div id="sfcrhasmt5px6msjnk3w6s2sc49kkplwddf" class="w-6 h-6 absolute mt-[14px]"></div>
-                    <script type="text/javascript" src="https://counter1.optistats.ovh/private/counter.js?c=rhasmt5px6msjnk3w6s2sc49kkplwddf&down=async" async></script>
-                    <noscript><a href="https://www.freecounterstat.com" title="counter for website"><img src="https://counter1.optistats.ovh/private/freecounterstat.php?c=rhasmt5px6msjnk3w6s2sc49kkplwddf" border="0" title="counter for website" alt="counter for website"></a></noscript> -->
+                </div>
+                <div class="max-md:hidden flex flex-col text-[8px] md:text-[10px] text-center md:text-right">
+                    <div id="clock">clock</div>
+                    <div id="date">date</div>
                 </div>
             </div>
         </div>
